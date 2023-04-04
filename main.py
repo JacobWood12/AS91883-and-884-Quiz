@@ -9,7 +9,7 @@ print("This is a multi-player quiz, so make sure you're both here.")
 # Get player names.
 print(seperator)
 player_1 = str(input("Player 1 - what is your name? \n"))
-# Tests if player names have numbers in them, and rejects them if they are.
+#2 Tests if player names have numbers in them, and rejects them if they are.
 if any(char.isdigit() for char in player_1):
   print("Please input a name with letters only.")
 else:
@@ -24,3 +24,6 @@ else:
       print(f"Welcome, {player_1} and {player_2}, let's get started.")
 
 print(seperator)
+
+# Question database.
+# TODO
