@@ -31,9 +31,9 @@ print(separator)
 # Question database.
 questions = [
   # Geography section.
-  "How many states are in the USA?",
-  "What continent is Nepal in?",
-  "What is the capital of Scotland?",
+  "How many states are in the USA? \n 1 - 51. \n 2 - 50. \n 3 - 60. \n",
+  "What continent is Nepal in? \n 1 - America. \n 2 - Europe. \n 3 - Asia \n",
+  "What is the capital of Scotland? \n 1 - Edinburgh. \n 2 - Glasgow. \n 3 - Cardiff. \n",
   "Where is Dunedin?",
   "What is the line drawn around the Earth halfway between both poles called?",
   "What is the population of China?",
@@ -57,3 +57,11 @@ questions = [
 ]
 
 # Question chooser.
+for i in range(1,10):
+  question = random.choice(questions)
+  if question == "Random bonus point!":
+    print("You both get a bonus point!")
+  else:
+    print(f"Question {i}")
+    answer = input(question)
+    print(separator)
