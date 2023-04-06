@@ -1,3 +1,6 @@
+# Imports random package to choose random question.
+import random
+
 # String of dashes to print to seperate text.
 separator = str("--------------------")
 
