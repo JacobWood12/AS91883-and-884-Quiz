@@ -36,17 +36,18 @@ questions = [
   "What continent is Nepal in? \n 1 - America. \n 2 - Europe. \n 3 - Asia \n",
   "What is the capital of Scotland? \n 1 - Edinburgh. \n 2 - Glasgow. \n 3 - Cardiff. \n",
   # History section.
-  "When did World War II start? \n 1 - 1945. \n 2 - 1940. \n 3 - 1941. \n?",
-  "How long ago was the extinction of the dinosaurs? \n 1 - 300 million y ars ago. \n 2 - 1 billion years ago. \n 3 - 65 million years ago. \n",
+  "When did World War II start? \n 1 - 1945. \n 2 - 1940. \n 3 - 1939. \n?",
+  "How long ago was the extinction of the dinosaurs? \n 1 - 300 million years ago. \n 2 - 1 billion years ago. \n 3 - 65 million years ago. \n",
   "When was the Treaty of Waitangi signed? \n 1 - 1850. \n 2 - 1840. \n 3 - 1799. \n",
   # Politics section.
   "How often are elections held in New Zealand? \n 1 - Every three years. \n 2 - Every five years. \n 3 - Every four years. \n",
   "About how many countries are there in the world? \n 1 - About 250. \n 2 - About 195. \n 3 - About 300. \n",
-  "Where was the first democracy? \n 1 - England. \n 2 - China. \n 3 - Greece. \n",
+  "Where was the first system of democracy? \n 1 - England. \n 2 - China. \n 3 - Greece. \n",
 ]
 
 # Tells users how to answer questions.
 print("Don't forget - to select your answer, enter the number next to it.")
+print(separator)
 
 # Sets score variables.
 player_1Score = int(0)
@@ -55,26 +56,204 @@ player_2Score = int(0)
 
 # Defines functions when answering questions for...
 # ...correct answers...
-def answerCorrect():
-  print("You're correct! 🥳")
+def answerCorrect(name):
+  print(f"{name}, you're correct! 🥳")
   print("A point to you.")
+  print(separator)
 
 
-# ...incorrect answers...
-def answerIncorrect():
-  print("You're incorrect. 🫤")
+# ... and incorrect answers.
+def answerIncorrect(name):
+  print(f"{name}, you're incorrect. 🫤")
   print("No points to you.")
-
-
-# ...and errors.
-def answerError():
-  print(
-    "Did you enter your answer as a number corresponding to the answer you picked? If not, that's probably the issue here"
-  )
-  print("If you did do that, then looks like I made a mistake somewhere.")
+  print(separator)
 
 
 # Question chooser.
 for i in range(1, 10):
   print(f"Question {i}")
   question = questions[i]
+  # Question 1
+  if question == "How many states are in the USA? \n 1 - 51. \n 2 - 50. \n 3 - 60. \n":
+    # Section to ask player 1.
+    print(separator)
+    player_1Answer = input(str(f"{player_1}, {question}"))
+    # Section to ask player 2.
+    print(separator)
+    player_2Answer = input(str(f"{player_2}, {question}"))
+    # Calculate and print player 1 score.
+    playerName = player_1
+    if player_1Answer == "2":
+      answerCorrect(playerName)
+    else:
+      answerIncorrect(playerName)
+    # Calculate and print player 2 score.
+    playerName = player_2
+    if player_2Answer == "2":
+      answerCorrect(playerName)
+    else:
+      answerIncorrect(playerName)
+  # Question 2
+  elif question == "What continent is Nepal in? \n 1 - America. \n 2 - Europe. \n 3 - Asia \n":
+    # Section to ask player 1.
+    player_1Answer = input(str(f"{player_1}, {question}"))
+    print(separator)
+    # Section to ask player 2.
+    player_2Answer = input(str(f"{player_2}, {question}"))
+    print(separator)
+    # Calculate and print player 1 score.
+    playerName = player_1
+    if player_1Answer == "3":
+      answerCorrect(playerName)
+    else:
+      answerIncorrect(playerName)
+    # Calculate and print player 2 score.
+    playerName = player_2
+    if player_2Answer == "3":
+      answerCorrect(playerName)
+    else:
+      answerIncorrect(playerName)
+  # Question 3
+  elif question == "What is the capital of Scotland? \n 1 - Edinburgh. \n 2 - Glasgow. \n 3 - Cardiff. \n":
+    # Section to ask player 1.
+    player_1Answer = input(str(f"{player_1}, {question}"))
+    print(separator)
+    # Section to ask player 2.
+    player_2Answer = input(str(f"{player_2}, {question}"))
+    print(separator)
+    # Calculate and print player 1 score.
+    playerName = player_1
+    if player_1Answer == "1":
+      answerCorrect(playerName)
+    else:
+      answerIncorrect(playerName)
+    # Calculate and print player 2 score.
+    playerName = player_2
+    if player_2Answer == "1":
+      answerCorrect(playerName)
+    else:
+      answerIncorrect(playerName)
+  # Question 4
+  elif question == "When did World War II start? \n 1 - 1945. \n 2 - 1940. \n 3 - 1939. \n?":
+    # Section to ask player 1.
+    player_1Answer = input(str(f"{player_1}, {question}"))
+    print(separator)
+    # Section to ask player 2.
+    player_2Answer = input(str(f"{player_2}, {question}"))
+    print(separator)
+    # Calculate and print player 1 score.
+    playerName = player_1
+    if player_1Answer == "3":
+      answerCorrect(playerName)
+    else:
+      answerIncorrect(playerName)
+    # Calculate and print player 2 score.
+    playerName = player_2
+    if player_2Answer == "3":
+      answerCorrect(playerName)
+    else:
+      answerIncorrect(playerName)
+  # Question 5
+  elif question == "How long ago was the extinction of the dinosaurs? \n 1 - 300 million years ago. \n 2 - 1 billion years ago. \n 3 - 65 million years ago. \n":
+    # Section to ask player 1.
+    player_1Answer = input(str(f"{player_1}, {question}"))
+    print(separator)
+    # Section to ask player 2.
+    player_2Answer = input(str(f"{player_2}, {question}"))
+    print(separator)
+    # Calculate and print player 1 score.
+    playerName = player_1
+    if player_1Answer == "3":
+      answerCorrect(playerName)
+    else:
+      answerIncorrect(playerName)
+    # Calculate and print player 2 score.
+    playerName = player_2
+    if player_2Answer == "3":
+      answerCorrect(playerName)
+    else:
+      answerIncorrect(playerName)
+  # Question 6
+  elif question == "When was the Treaty of Waitangi signed? \n 1 - 1850. \n 2 - 1840. \n 3 - 1799. \n":
+    # Section to ask player 1.
+    print(separator)
+    player_1Answer = input(str(f"{player_1}, {question}"))
+    print(separator)
+    # Section to ask player 2.
+    print(separator)
+    player_2Answer = input(str(f"{player_2}, {question}"))
+    print(separator)
+    # Calculate and print player 1 score.
+    playerName = player_1
+    if player_1Answer == "2":
+      answerCorrect(playerName)
+    else:
+      answerIncorrect(playerName)
+    # Calculate and print player 2 score.
+    playerName = player_2
+    if player_2Answer == "2":
+      answerCorrect(playerName)
+    else:
+      answerIncorrect(playerName)
+  # Question 7
+  elif question == "How often are elections held in New Zealand? \n 1 - Every three years. \n 2 - Every five years. \n 3 - Every four years. \n":
+    # Section to ask player 1.
+    player_1Answer = input(str(f"{player_1}, {question}"))
+    print(separator)
+    # Section to ask player 2.
+    player_2Answer = input(str(f"{player_2}, {question}"))
+    print(separator)
+    # Calculate and print player 1 score.
+    playerName = player_1
+    if player_1Answer == "1":
+      answerCorrect(playerName)
+    else:
+      answerIncorrect(playerName)
+    # Calculate and print player 2 score.
+    playerName = player_2
+    if player_2Answer == "1":
+      answerCorrect(playerName)
+    else:
+      answerIncorrect(playerName)
+  # Question 8
+  elif question == "About how many countries are there in the world? \n 1 - About 250. \n 2 - About 195. \n 3 - About 300. \n":
+    # Section to ask player 1.
+    player_1Answer = input(str(f"{player_1}, {question}"))
+    print(separator)
+    # Section to ask player 2.
+    player_2Answer = input(str(f"{player_2}, {question}"))
+    print(separator)
+    # Calculate and print player 1 score.
+    playerName = player_1
+    if player_1Answer == "2":
+      answerCorrect(playerName)
+    else:
+      answerIncorrect(playerName)
+    # Calculate and print player 2 score.
+    playerName = player_2
+    if player_2Answer == "2":
+      answerCorrect(playerName)
+    else:
+      answerIncorrect(playerName)
+  # Question 9
+  elif question == "Where was the first system of democracy? \n 1 - England. \n 2 - China. \n 3 - Greece. \n":
+    # Section to ask player 1.
+    player_1Answer = input(str(f"{player_1}, {question}"))
+    print(separator)
+    # Section to ask player 2.
+    player_2Answer = input(str(f"{player_2}, {question}"))
+    print(separator)
+    # Calculate and print player 1 score.
+    playerName = player_1
+    if player_1Answer == "3":
+      answerCorrect(playerName)
+    else:
+      answerIncorrect(playerName)
+    # Calculate and print player 2 score.
+    playerName = player_2
+    if player_2Answer == "3":
+      answerCorrect(playerName)
+    else:
+      answerIncorrect(playerName)
+  else:
+    print("oops.")
