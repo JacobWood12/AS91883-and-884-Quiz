@@ -69,6 +69,13 @@ def answerIncorrect(name):
   print(separator)
 
 
+# Defines function to print scores after each question.
+def scores():
+  print(f"{player_1}, you're now at {player_1Score} points.")
+  print(f"{player_2}, you're now at {player_2Score} points.")
+  print(separator)
+
+
 # Question chooser.
 for i in range(1, 10):
   print(f"Question {i}")
@@ -84,15 +91,18 @@ for i in range(1, 10):
     # Calculate and print player 1 score.
     playerName = player_1
     if player_1Answer == "2":
+      player_1Score = player_1Score + 1
       answerCorrect(playerName)
     else:
       answerIncorrect(playerName)
     # Calculate and print player 2 score.
     playerName = player_2
     if player_2Answer == "2":
+      player_2Score = player_2Score + 1
       answerCorrect(playerName)
     else:
       answerIncorrect(playerName)
+    scores()
   # Question 2
   elif question == "What continent is Nepal in? \n 1 - America. \n 2 - Europe. \n 3 - Asia \n":
     # Section to ask player 1.
@@ -104,15 +114,18 @@ for i in range(1, 10):
     # Calculate and print player 1 score.
     playerName = player_1
     if player_1Answer == "3":
+      player_1Score = player_1Score + 1
       answerCorrect(playerName)
     else:
       answerIncorrect(playerName)
     # Calculate and print player 2 score.
     playerName = player_2
     if player_2Answer == "3":
+      player_2Score = player_2Score + 1
       answerCorrect(playerName)
     else:
       answerIncorrect(playerName)
+    scores()
   # Question 3
   elif question == "What is the capital of Scotland? \n 1 - Edinburgh. \n 2 - Glasgow. \n 3 - Cardiff. \n":
     # Section to ask player 1.
@@ -124,15 +137,18 @@ for i in range(1, 10):
     # Calculate and print player 1 score.
     playerName = player_1
     if player_1Answer == "1":
+      player_1Score = player_1Score + 1
       answerCorrect(playerName)
     else:
       answerIncorrect(playerName)
     # Calculate and print player 2 score.
     playerName = player_2
     if player_2Answer == "1":
+      player_2Score = player_2Score + 1
       answerCorrect(playerName)
     else:
       answerIncorrect(playerName)
+    scores()
   # Question 4
   elif question == "When did World War II start? \n 1 - 1945. \n 2 - 1940. \n 3 - 1939. \n?":
     # Section to ask player 1.
@@ -144,12 +160,14 @@ for i in range(1, 10):
     # Calculate and print player 1 score.
     playerName = player_1
     if player_1Answer == "3":
+      player_1Score = player_1Score + 1
       answerCorrect(playerName)
     else:
       answerIncorrect(playerName)
     # Calculate and print player 2 score.
     playerName = player_2
     if player_2Answer == "3":
+      player_2Score = player_2Score + 1
       answerCorrect(playerName)
     else:
       answerIncorrect(playerName)
@@ -164,15 +182,18 @@ for i in range(1, 10):
     # Calculate and print player 1 score.
     playerName = player_1
     if player_1Answer == "3":
+      player_1Score = player_1Score + 1
       answerCorrect(playerName)
     else:
       answerIncorrect(playerName)
     # Calculate and print player 2 score.
     playerName = player_2
     if player_2Answer == "3":
+      player_2Score = player_2Score + 1
       answerCorrect(playerName)
     else:
       answerIncorrect(playerName)
+    scores()
   # Question 6
   elif question == "When was the Treaty of Waitangi signed? \n 1 - 1850. \n 2 - 1840. \n 3 - 1799. \n":
     # Section to ask player 1.
@@ -186,15 +207,18 @@ for i in range(1, 10):
     # Calculate and print player 1 score.
     playerName = player_1
     if player_1Answer == "2":
+      player_1Score = player_1Score + 1
       answerCorrect(playerName)
     else:
       answerIncorrect(playerName)
     # Calculate and print player 2 score.
     playerName = player_2
     if player_2Answer == "2":
+      player_2Score = player_2Score + 1
       answerCorrect(playerName)
     else:
       answerIncorrect(playerName)
+    scores()
   # Question 7
   elif question == "How often are elections held in New Zealand? \n 1 - Every three years. \n 2 - Every five years. \n 3 - Every four years. \n":
     # Section to ask player 1.
@@ -206,15 +230,18 @@ for i in range(1, 10):
     # Calculate and print player 1 score.
     playerName = player_1
     if player_1Answer == "1":
+      player_1Score = player_1Score + 1
       answerCorrect(playerName)
     else:
       answerIncorrect(playerName)
     # Calculate and print player 2 score.
     playerName = player_2
     if player_2Answer == "1":
+      player_2Score = player_2Score + 1
       answerCorrect(playerName)
     else:
       answerIncorrect(playerName)
+    scores()
   # Question 8
   elif question == "About how many countries are there in the world? \n 1 - About 250. \n 2 - About 195. \n 3 - About 300. \n":
     # Section to ask player 1.
@@ -226,15 +253,18 @@ for i in range(1, 10):
     # Calculate and print player 1 score.
     playerName = player_1
     if player_1Answer == "2":
+      player_1Score = player_1Score + 1
       answerCorrect(playerName)
     else:
       answerIncorrect(playerName)
     # Calculate and print player 2 score.
     playerName = player_2
     if player_2Answer == "2":
+      player_2Score = player_2Score + 1
       answerCorrect(playerName)
     else:
       answerIncorrect(playerName)
+    scores()
   # Question 9
   elif question == "Where was the first system of democracy? \n 1 - England. \n 2 - China. \n 3 - Greece. \n":
     # Section to ask player 1.
@@ -246,14 +276,32 @@ for i in range(1, 10):
     # Calculate and print player 1 score.
     playerName = player_1
     if player_1Answer == "3":
+      player_1Score = player_1Score + 1
       answerCorrect(playerName)
     else:
       answerIncorrect(playerName)
     # Calculate and print player 2 score.
     playerName = player_2
     if player_2Answer == "3":
+      player_2Score = player_2Score + 1
       answerCorrect(playerName)
     else:
       answerIncorrect(playerName)
   else:
-    print("oops.")
+    print("Looks like there's been an error. Try starting again.")
+
+# Print final scores.
+print("It's the end of the quiz now.")
+print("And the winner is...")
+# If player 1 wins.
+if player_1Score > player_2Score:
+  print(f"{player_1}, with {player_1Score} points!")
+  print(f"And in second place is {player_2} with {player_2Score} points.")
+# If player 2 wins.
+elif player_1Score < player_2Score:
+  print(f"{player_2}, with {player_2Score} points!")
+  print(f"And in second place is {player_1} with {player_1Score} points.")
+# If it's a tie.
+else:
+  print("Everyone!")
+  print(f"{player_1} AND {player_2} both tied on {player_1Score} points!")
