@@ -197,11 +197,9 @@ for i in range(1, 10):
   # Question 6
   elif question == "When was the Treaty of Waitangi signed? \n 1 - 1850. \n 2 - 1840. \n 3 - 1799. \n":
     # Section to ask player 1.
-    print(separator)
     player_1Answer = input(str(f"{player_1}, {question}"))
     print(separator)
     # Section to ask player 2.
-    print(separator)
     player_2Answer = input(str(f"{player_2}, {question}"))
     print(separator)
     # Calculate and print player 1 score.
@@ -304,4 +302,4 @@ elif player_1Score < player_2Score:
 # If it's a tie.
 else:
   print("Everyone!")
-  print(f"{player_1} AND {player_2} both tied on {player_1Score} points!")
+  print(f"{player_1} and {player_2} both tied on {player_1Score} points!")
