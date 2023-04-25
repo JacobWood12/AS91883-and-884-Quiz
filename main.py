@@ -9,6 +9,29 @@ print("Welcome to this quiz!")
 print("Today, your topics will be geography, history, and politics.")
 print("This is a multi-player quiz, so make sure you're both here.")
 
+
+# Defines functions when answering questions for...
+# ...correct answers...
+def answerCorrect(name):
+  print(f"{name}, you're correct! 🥳")
+  print("A point to you.")
+  print(separator)
+
+
+# ... and incorrect answers.
+def answerIncorrect(name):
+  print(f"{name}, you're incorrect. 🫤")
+  print("No points to you.")
+  print(separator)
+
+
+# Defines function to print scores after each question.
+def scores():
+  print(f"{player_1}, you're now at {player_1Score} points.")
+  print(f"{player_2}, you're now at {player_2Score} points.")
+  print(separator)
+
+
 # Get player names.
 print(separator)
 player_1 = str(input("Player 1 - what is your name? \n"))
@@ -52,29 +75,6 @@ print(separator)
 # Sets score variables.
 player_1Score = int(0)
 player_2Score = int(0)
-
-
-# Defines functions when answering questions for...
-# ...correct answers...
-def answerCorrect(name):
-  print(f"{name}, you're correct! 🥳")
-  print("A point to you.")
-  print(separator)
-
-
-# ... and incorrect answers.
-def answerIncorrect(name):
-  print(f"{name}, you're incorrect. 🫤")
-  print("No points to you.")
-  print(separator)
-
-
-# Defines function to print scores after each question.
-def scores():
-  print(f"{player_1}, you're now at {player_1Score} points.")
-  print(f"{player_2}, you're now at {player_2Score} points.")
-  print(separator)
-
 
 # Question chooser.
 for i in range(1, 10):
