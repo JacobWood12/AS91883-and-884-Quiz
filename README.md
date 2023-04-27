@@ -1,4 +1,4 @@
-# AS91883/84 Quiz.
+# AS91883 and 884 Quiz.
 
 ### My assesment for Year 11 Computer Science, covering Assessment Standards 91883 and 91884.
 I will be creating a multi-player, multi choice quiz.
